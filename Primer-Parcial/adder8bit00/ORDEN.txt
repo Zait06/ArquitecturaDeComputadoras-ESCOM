@@ -1,0 +1,10 @@
+and00.vhdl
+xor00.vhdl
+packageha00.vhdl
+HA00.vhdl
+or00.vhdl
+packagefa00.vhdl
+FA00.vhdl
+xnor00.vhdl
+packageadder4bit00.vhdl
+topadder8bti00.vhdl
