@@ -1,0 +1,10 @@
+xor00
+and00
+packageha00
+ha00
+or00
+packageefa00
+fa00
+---------------- importados de fa00
+packagemult4bit00
+mult4bir00
