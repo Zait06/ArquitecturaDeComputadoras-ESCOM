@@ -1,0 +1,7 @@
+Clasificacion gral de las memorias
+Claisifcacion gral de las arquitecturas
+Concepto de arquitectura de computadoras
+Clasificacion de los tipos de instrucciones (MIPS 32 bits)
+Clasificacion de los tipos de operaciones
+Clasificacion de las tecnicas de direccionamiento
+Clasificacion de los registros del procesador
