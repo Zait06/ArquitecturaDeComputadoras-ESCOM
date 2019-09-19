@@ -44,7 +44,7 @@ begin
 						sdiv<=sdiv+'1';
 						oscout<=oscout;
 					end if;
-				when "00010"=>
+				when "00111"=>
 					if(sdiv>"0001000000000000000000") then
 						sdiv<=(others=>'0');
 						oscout<=not(oscout);
@@ -52,7 +52,7 @@ begin
 						sdiv<=sdiv+'1';
 						oscout<=oscout;
 					end if;
-				when "00110"=>
+				when "01111"=>
 					if(sdiv>"0000100000000000000000") then
 						sdiv<=(others=>'0');
 						oscout<=not(oscout);
@@ -60,7 +60,7 @@ begin
 						sdiv<=sdiv+'1';
 						oscout<=oscout;
 					end if;
-				when "00111"=>
+				when "11111"=>
 					if(sdiv>"0000010000000000000000") then
 						sdiv<=(others=>'0');
 						oscout<=not(oscout);
@@ -68,7 +68,7 @@ begin
 						sdiv<=sdiv+'1';
 						oscout<=oscout;
 					end if;
-				when "01111"=>
+				when "11110"=>
 					if(sdiv>"0000001000000000000000") then
 						sdiv<=(others=>'0');
 						oscout<=not(oscout);
@@ -76,7 +76,7 @@ begin
 						sdiv<=sdiv+'1';
 						oscout<=oscout;
 					end if;
-				when "01110"=>
+				when "11100"=>
 					if(sdiv>"0000000100000000000000") then
 						sdiv<=(others=>'0');
 						oscout<=not(oscout);
@@ -84,8 +84,16 @@ begin
 						sdiv<=sdiv+'1';
 						oscout<=oscout;
 					end if;
-				when "01100"=>
+				when "11000"=>
 					if(sdiv>"0000000010000000000000") then
+						sdiv<=(others=>'0');
+						oscout<=not(oscout);
+					else
+						sdiv<=sdiv+'1';
+						oscout<=oscout;
+					end if;
+				when "10000"=>
+					if(sdiv>"0000000001000000000000") then
 						sdiv<=(others=>'0');
 						oscout<=not(oscout);
 					else
