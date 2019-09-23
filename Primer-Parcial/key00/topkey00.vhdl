@@ -20,10 +20,7 @@ end topkey00;
 architecture topkey0 of topkey00 is
 begin
 outtransist0 <= "0001";
-	T00: topdiv00 port map(	oscout0=> clk0,	cdiv0=>cdiv00);
+	T00: topdiv00 port map(oscout0=> clk0,	cdiv0=>cdiv00);
 	T01: contring00 port map(clks=>clk0,resets=>reset0, outs=>outr0);
 	T02: coder00 port map(clkc=>clk0,incontc=>outr0, inkeyc=>inkey0,outcoderc=>outcoder0);
-	
-	
-
 end topkey0;
