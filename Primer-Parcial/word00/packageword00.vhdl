@@ -20,8 +20,10 @@ package packageword00 is
 	
 	component coder00 is
 		port(
-				incontc:in std_logic_vector(3 downto 0);
-				outcoderc:inout std_logic_vector(6 downto 0)
+				clkc:inout std_logic;
+				inkeyc:in std_logic_vector(3 downto 0);
+				incontc:inout std_logic_vector(3 downto 0);
+				outcoderc:out std_logic_vector(6 downto 0)
 			);
 	end component;
 end packageword00;
