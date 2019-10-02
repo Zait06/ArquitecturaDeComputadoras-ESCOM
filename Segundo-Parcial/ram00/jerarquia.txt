@@ -1,0 +1,9 @@
+Del menos al más significativo:
+Importar la carpeta div00VHDL
+contring00
+coder00
+ram00
+conread00
+muxram00
+packageram00
+topram00
