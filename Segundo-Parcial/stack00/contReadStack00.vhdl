@@ -22,10 +22,10 @@ begin
 		if (clkcR'event and clkcR='1') then
 			case scontrolCR is
 				when "10"=>
-					outcontcR<=(others=>'0');
+					outcontcR<=incontWcR;
 				when "11"=>
-					if (outcontcR<incontWcR) then
-						outcontcR<=outcontcR+'1';
+					if (outcontcR>"00000") then
+						outcontcR<=outcontcR-'1';
 					else
 						outcontcR<=outcontcR;
 					end if;
