@@ -18,7 +18,7 @@ end shift12bit00;
 architecture shift12bit0 of shift12bit00 is
 begin
     pshift:process(clkms12)
-        variable aux:std_logic:='0';
+        variable aux:bit:='0';
     begin
         if (clkms12'event and clkms12='1') then
             if (codopms12="0101") then

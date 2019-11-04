@@ -16,12 +16,12 @@ entity compadd00 is
 end compadd00;
 
 architecture compadd0 of compadd00 is
-    signal snibb00,snibb01,snibb02:std_logic;
+    signal snibb00,snibb01,snibb02:std_logic_vector(3 downto 0);
 begin
     pcompadd:process(clkca)
-        variable aux:std_logic:=0;
+        variable aux:bit:='0';
     begin
-        if (clkca'event clkca='1') then
+        if (clkca'event and clkca='1') then
             if (codopca="0011") then
                 case inFlagca is
                     when '0'=>

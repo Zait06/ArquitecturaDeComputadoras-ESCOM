@@ -18,7 +18,7 @@ end shift8bit00;
 architecture shift8bit0 of shift8bit00 is
 begin
     pshift:process(clkms8)
-        variable aux:std_logic:='0';
+        variable aux:bit:='0';
     begin
         if (clkms8'event and clkms8='1') then
             if (codopms8="0100") then

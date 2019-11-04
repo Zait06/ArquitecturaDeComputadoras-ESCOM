@@ -5,6 +5,8 @@ use ieee.std_logic_unsigned.all;
 library lattice;
 use lattice.all;
 
+-- leerDato = portab00.vhdl
+
 entity portab00 is
     port(
             clkLp,inFlagLp:in std_logic;
@@ -25,7 +27,7 @@ begin
                     when '0'=>
                         outFlagLp<='0';
                     when '1'=>
-                        outPortALp<=inProtALp;
+                        outPortALp<=inPortALp;
                         outFlagLp<='1';
                     when others=>null;
                 end case;

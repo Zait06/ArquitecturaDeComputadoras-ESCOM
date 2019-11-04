@@ -15,9 +15,9 @@ entity ac8bit00 is
 end ac8bit00;
 
 architecture ac8bit0 of ac8bit00 is
-    variable aux:std_logic:='0';
 begin
     pac8:process(clkac8)
+		variable aux:bit:='0';
     begin
         if (clkac8'event and clkac8='1') then
             case inFlagac8Inst is

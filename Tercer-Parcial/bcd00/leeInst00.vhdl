@@ -10,7 +10,7 @@ entity leeInst00 is
             inFlagInstrom:in std_logic;
             inPCrom:in std_logic_vector(3 downto 0);
             outFlagrom:out std_logic;
-            outcode:out std_logic_vector(3 downto 0);
+            outcode:out std_logic_vector(3 downto 0)
         );
 end leeInst00;
 
@@ -27,7 +27,7 @@ architecture leeInst0 of leeInst00 is
                                 others=>"0000"
                             );
 begin
-    plee:process(memrom)
+    plee:process(inFlagInstrom)
     begin
         case inFlagInstrom is
             when '0'=>

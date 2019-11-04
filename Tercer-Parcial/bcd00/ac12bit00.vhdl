@@ -15,9 +15,9 @@ entity ac12bit00 is
 end ac12bit00;
 
 architecture ac12bit0 of ac12bit00 is
-    variable aux:std_logic:='0';
 begin
     pac12:process(clkac12)
+		variable aux:bit:='0';
     begin
         if (clkac12'event and clkac12='1') then
             case inFlagac12Inst is
